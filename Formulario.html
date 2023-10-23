@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario</title>
+	<style>
+		table{
+			border-collapse: collapse;
+			width: 10%;
+			border: 6px double #000;
+		}
+		th, td {
+			border: 6px double #000;
+			padding: 6px;
+			text-align: left;
+		}
+
+	</style>
+</head>
+<body>
+	<table class="table">
+		<tr>
+			<th>Mes</th>
+			<th>Visitas</th>
+			<th>Clicks</th>
+		</tr>
+		<tr>
+			<td>Enero</td>
+			<td>500</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>Febrero</td>
+			<td>600</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>Marzo</td>
+			<td>1000</td>
+			<td>50</td>
+		</tr>
+	</table>
+
+	<h2>Formulario de Registro</h2>
+	<form action="Aceptado.html" method="post">
+
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" required><br><br>
+
+		<label for="apellido">Apellido:</label>
+		<input type="text" id="apellido" name="apellido" required><br><br>
+
+		<label>Sexo:</label><br>
+		<input type="radio" id="hombre" name="sexo" value="hombre" required>
+		<label for="hombre">Hombre</label><br>
+		<input type="radio" id="mujer" name="sexo" value="mujer" required>
+		<label for="mujer">Mujer</label><br><br>
+
+		<label for="correo">Correo:</label>
+		<input type="email" id="correo" name="correo" required><br><br>
+
+		<label for="poblacion">Población:</label>
+		<select id="poblacion" name="poblacion">
+			<option value="barcelona">Barcelona</option>
+			<option value="badalona">Badalona</option>
+			<option value="sabadell">Sabadell</option>
+		</select><br><br>
+
+		<label for="descripcion">Descripción:</label><br>
+		<textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea><br><br>
+
+		<input type="checkbox" id="novedades" name="novedades" value="si">
+		<label for="novedades">Deseo recibir información sobre novedades y ofertas</label><br><br>
+
+		<input type="checkbox" id="aceptar" name="aceptar" value="si" required>
+		<label for="aceptar">Declaro haber leído y aceptado las condiciones generales del programa y la normativa sobre protección de datos</label><br><br>
+
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
